@@ -58,3 +58,6 @@ diagnostics/
 
 # Ignore published app's output folder
 /out/
+
+# Ignore migrations
+/Migrations/

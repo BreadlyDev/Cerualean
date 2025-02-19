@@ -1,4 +1,8 @@
 using Cerualean.Data;
+using Cerualean.Domain.CourseCategoryModule;
+using Cerualean.Domain.CourseCategoryModule.Interfaces;
+using Cerualean.Domain.CourseModule;
+using Cerualean.Domain.CourseModule.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -14,6 +18,8 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+builder.Services.AddScoped<ICourseCategoryRepository, CourseCategoryRepository>();
+builder.Services.AddScoped<ICourseRepository, CourseRepository>();
 
 var app = builder.Build();
 
