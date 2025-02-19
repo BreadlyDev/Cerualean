@@ -1,4 +1,5 @@
 using Cerualean.Domain.CourseCategoryModule.Dtos;
+using Cerualean.Domain.CourseCategoryModule.Helpers;
 using Cerualean.Domain.CourseCategoryModule.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,6 +19,10 @@ namespace Cerualean.Domain.CourseCategoryModule
         public async Task<IActionResult> GetList()
         {
             var categoryModelList = await _categoryRepo.GetCourseCategoryList();
+            
+            categoryModelList.ForEach(category => 
+            CourseCategoryMappers.ToCourseCategoryDto(category));
+            
             return Ok(categoryModelList);
         }
 
@@ -32,7 +37,7 @@ namespace Cerualean.Domain.CourseCategoryModule
                 return NotFound(CourseCategoryErrors.CourseCategoryWasNotFound);
             }
 
-            return Ok(categoryModel);
+            return Ok(CourseCategoryMappers.ToCourseCategoryDto(categoryModel));
         }
 
         [HttpPost]
