@@ -19,7 +19,7 @@ namespace Cerualean.Domain.CourseModule
             return course;
         }
 
-        public async Task<Course?> DeleteCourse(Guid id)
+        public async Task<Course?> DeleteCourse(int id)
         {
             var courseModel = await _context.Courses.FindAsync(id);
 
@@ -32,7 +32,7 @@ namespace Cerualean.Domain.CourseModule
             return courseModel;
         }
 
-        public async Task<Course?> GetCourseById(Guid id)
+        public async Task<Course?> GetCourseById(int id)
         {
             return await _context.Courses.FindAsync(id);
         }
@@ -47,13 +47,13 @@ namespace Cerualean.Domain.CourseModule
             return await _context.Courses.ToListAsync();
         }
 
-        public async Task<List<Course>> GetCourseListByCategory(Guid categoryId)
+        public async Task<List<Course>> GetCourseListByCategory(int categoryId)
         {
             return await _context.Courses
                 .Where(course => course.CategoryId == categoryId).ToListAsync();
         }
 
-        public async Task<Course?> UpdateCourse(Guid id, Course course)
+        public async Task<Course?> UpdateCourse(int id, Course course)
         { 
             var existingCourseModel = await _context.Courses.FindAsync(id);
 
@@ -70,6 +70,11 @@ namespace Cerualean.Domain.CourseModule
 
             await _context.SaveChangesAsync();
             return existingCourseModel;
+        }
+
+        public async Task<bool> CourseExists(int id)
+        {
+            return await _context.Courses.AnyAsync(course => course.Id == id);
         }
     }
 }

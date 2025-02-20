@@ -19,7 +19,7 @@ namespace Cerualean.Domain.Modules.CourseCategories
             return category;
         }
 
-        public async Task<CourseCategory?> DeleteCourseCategory(Guid id)
+        public async Task<CourseCategory?> DeleteCourseCategory(int id)
         {
             var category = await _context.CourseCategories.FindAsync(id);
 
@@ -38,7 +38,7 @@ namespace Cerualean.Domain.Modules.CourseCategories
         {
             return await _context.CourseCategories.ToListAsync();
         }
-        public async Task<CourseCategory?> GetCourseCategoryById(Guid id)
+        public async Task<CourseCategory?> GetCourseCategoryById(int id)
         {
             return await _context.CourseCategories.FindAsync(id);
         }
@@ -47,7 +47,7 @@ namespace Cerualean.Domain.Modules.CourseCategories
             return await _context.CourseCategories.FirstOrDefaultAsync(x => x.Title == title);
         }
 
-        public async Task<CourseCategory?> UpdateCourseCategory(Guid id, CourseCategory category)
+        public async Task<CourseCategory?> UpdateCourseCategory(int id, CourseCategory category)
         {
             var existingCategory = await _context.CourseCategories.FindAsync(id);
 
@@ -63,9 +63,9 @@ namespace Cerualean.Domain.Modules.CourseCategories
             return existingCategory;
         }
 
-        public async Task<bool> CourseCategoryExists(Guid id)
+        public async Task<bool> CourseCategoryExists(int id)
         {
-            return await _context.CourseCategories.AnyAsync(course => course.Id == id);
+            return await _context.CourseCategories.AnyAsync(category => category.Id == id);
         }
     }
 }

@@ -9,6 +9,6 @@ namespace Cerualean.Domain.CourseModule.Dtos
         [RegularExpression(@"\d{1,2}\s*(y|M|d|h|m)+$")]
         public string Duration { get; set; }
         public double Price { get; set; }
-        public Guid CategoryId { get; set; }
+        public int CategoryId { get; set; }
     }
 }

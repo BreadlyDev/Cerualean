@@ -15,8 +15,8 @@ namespace Cerualean.Domain.CourseModule
         }
 
         [HttpGet]
-        [Route("{categoryId:guid}/course/list")]
-        public async Task<IActionResult> GetListByCategory([FromRoute] Guid categoryId)
+        [Route("{categoryId:int}/course/list")]
+        public async Task<IActionResult> GetListByCategory([FromRoute] int categoryId)
         {
             try
             {
@@ -29,8 +29,8 @@ namespace Cerualean.Domain.CourseModule
         }
 
         [HttpGet]
-        [Route("course/{id:guid}")]
-        public async Task<IActionResult> GetById([FromRoute] Guid id)
+        [Route("course/{id:int}")]
+        public async Task<IActionResult> GetById([FromRoute] int id)
         {
             try
             {
@@ -43,9 +43,9 @@ namespace Cerualean.Domain.CourseModule
         }
 
         [HttpPost]
-        [Route("{categoryId:guid}/create/")]
+        [Route("{categoryId:int}/create/")]
         public async Task<IActionResult> Create(
-            [FromRoute] Guid categoryId,
+            [FromRoute] int categoryId,
             [FromBody] CreateCourseDto courseDto
         )
         {
@@ -61,9 +61,9 @@ namespace Cerualean.Domain.CourseModule
         }
 
         [HttpPut, HttpPatch]
-        [Route("course/{id:guid}")]
+        [Route("course/{id:int}")]
         public async Task<IActionResult> Update(
-            [FromRoute] Guid id,
+            [FromRoute] int id,
             [FromBody] UpdateCourseDto courseDto
         )
         {
@@ -78,8 +78,8 @@ namespace Cerualean.Domain.CourseModule
         }
 
         [HttpDelete]
-        [Route("course/{id:guid}")]
-        public async Task<IActionResult> Delete([FromRoute] Guid id)
+        [Route("course/{id:int}")]
+        public async Task<IActionResult> Delete([FromRoute] int id)
         {
             try 
             {

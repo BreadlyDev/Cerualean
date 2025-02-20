@@ -26,7 +26,7 @@ namespace Cerualean.Domain.Modules.CourseCategories
             };
         }
 
-        public async Task<CourseCategoryDto> DeleteCourseCategory(Guid id)
+        public async Task<CourseCategoryDto> DeleteCourseCategory(int id)
         {
             var courseModel = await _categoryRepo.DeleteCourseCategory(id);
             
@@ -40,7 +40,7 @@ namespace Cerualean.Domain.Modules.CourseCategories
             return courseModel.ToCourseCategoryDto();
         }
 
-        public async Task<CourseCategoryDto> GetCourseCategoryById(Guid id)
+        public async Task<CourseCategoryDto> GetCourseCategoryById(int id)
         {
             var courseModel = await _categoryRepo.GetCourseCategoryById(id);
 
@@ -74,7 +74,7 @@ namespace Cerualean.Domain.Modules.CourseCategories
             return courseModelList.Select(course => course.ToCourseCategoryDto()).ToList();
         }
 
-        public async Task<CourseCategoryDto> UpdateCourseCategory(Guid id, UpdateCourseCategoryDto categoryDto)
+        public async Task<CourseCategoryDto> UpdateCourseCategory(int id, UpdateCourseCategoryDto categoryDto)
         {
             var courseModel = await _categoryRepo.UpdateCourseCategory(
                 id, categoryDto.ToCourseCategoryFromUpdateDto()

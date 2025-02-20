@@ -21,7 +21,7 @@ namespace Cerualean.Domain.Modules.Courses
             _categoryRepo = categoryRepo;
         }
 
-        public async Task<CourseDto> CreateCourse(Guid categoryId, CreateCourseDto courseDto)
+        public async Task<CourseDto> CreateCourse(int categoryId, CreateCourseDto courseDto)
         {
             var categoryExists = await _categoryRepo.CourseCategoryExists(categoryId);
 
@@ -37,7 +37,7 @@ namespace Cerualean.Domain.Modules.Courses
             return courseModel.ToCourseDto();
         }
 
-        public async Task<CourseDto> DeleteCourse(Guid id)
+        public async Task<CourseDto> DeleteCourse(int id)
         {
             var courseModel = await _courseRepo.DeleteCourse(id);
 
@@ -49,7 +49,7 @@ namespace Cerualean.Domain.Modules.Courses
             return courseModel.ToCourseDto();
         }
 
-        public async Task<CourseDto> GetCourseById(Guid id)
+        public async Task<CourseDto> GetCourseById(int id)
         {
             var courseModel = await _courseRepo.GetCourseById(id);
 
@@ -79,7 +79,7 @@ namespace Cerualean.Domain.Modules.Courses
             return courseModelList.Select(course => course.ToCourseDto()).ToList();
         }
 
-        public async Task<List<CourseDto>> GetCourseListByCategory(Guid categoryId)
+        public async Task<List<CourseDto>> GetCourseListByCategory(int categoryId)
         {
             var categoryExists = await _categoryRepo.CourseCategoryExists(categoryId);
 
@@ -92,7 +92,7 @@ namespace Cerualean.Domain.Modules.Courses
             return courseModelList.Select(course => course.ToCourseDto()).ToList();
         }
 
-        public async Task<CourseDto> UpdateCourse(Guid id, UpdateCourseDto courseDto)
+        public async Task<CourseDto> UpdateCourse(int id, UpdateCourseDto courseDto)
         {
             
             var courseModel = await _courseRepo.UpdateCourse(id, courseDto.ToCourseFromUpdateDto());

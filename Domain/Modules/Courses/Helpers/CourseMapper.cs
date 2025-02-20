@@ -17,7 +17,7 @@ namespace Cerualean.Domain.CourseModule.Helpers
             };
         }
 
-        public static Course ToCourseFromCreateDto(this CreateCourseDto courseDto, Guid categoryId)
+        public static Course ToCourseFromCreateDto(this CreateCourseDto courseDto, int categoryId)
         {
             return new Course 
             {

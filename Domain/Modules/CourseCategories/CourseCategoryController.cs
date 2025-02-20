@@ -1,6 +1,7 @@
 using Cerualean.Domain.Common.Exceptions;
 using Cerualean.Domain.Modules.CourseCategories.Dtos;
 using Cerualean.Domain.Modules.CourseCategories.Interfaces;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cerualean.Domain.Modules.CourseCategories
@@ -18,12 +19,19 @@ namespace Cerualean.Domain.Modules.CourseCategories
         [Route("list")]
         public async Task<IActionResult> GetList()
         {
-            return Ok(await _categoryService.GetCourseCategoryList());
+            try 
+            {
+                return Ok(await _categoryService.GetCourseCategoryList());
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Internal server error");
+            }
         }
 
         [HttpGet]
-        [Route("{id:guid}")]
-        public async Task<IActionResult> GetById([FromRoute] Guid id)
+        [Route("{id:int}")]
+        public async Task<IActionResult> GetById([FromRoute] int id)
         {
             try
             {
@@ -46,9 +54,9 @@ namespace Cerualean.Domain.Modules.CourseCategories
         }
 
         [HttpPut, HttpPatch]
-        [Route("{id:guid}")]
+        [Route("{id:int}")]
         public async Task<IActionResult> Update(
-            [FromRoute] Guid id,
+            [FromRoute] int id,
             [FromBody] UpdateCourseCategoryDto categoryDto
         )
         {
@@ -63,8 +71,8 @@ namespace Cerualean.Domain.Modules.CourseCategories
         }
 
         [HttpDelete]
-        [Route("{id:guid}")]
-        public async Task<IActionResult> Delete([FromRoute] Guid id)
+        [Route("{id:int}")]
+        public async Task<IActionResult> Delete([FromRoute] int id)
         {
             try
             {
