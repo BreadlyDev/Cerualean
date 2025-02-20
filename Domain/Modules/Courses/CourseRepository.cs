@@ -69,7 +69,7 @@ namespace Cerualean.Domain.CourseModule
             existingCourseModel.CategoryId = course.CategoryId;
 
             await _context.SaveChangesAsync();
-            return course;
+            return existingCourseModel;
         }
     }
 }

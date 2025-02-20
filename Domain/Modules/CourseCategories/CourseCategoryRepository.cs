@@ -60,7 +60,7 @@ namespace Cerualean.Domain.Modules.CourseCategories
             existingCategory.Description = category.Description;
 
             await _context.SaveChangesAsync();
-            return category;
+            return existingCategory;
         }
 
         public async Task<bool> CourseCategoryExists(Guid id)
