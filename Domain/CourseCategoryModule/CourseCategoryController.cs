@@ -18,12 +18,12 @@ namespace Cerualean.Domain.CourseCategoryModule
         [Route("list")]
         public async Task<IActionResult> GetList()
         {
-            var categoryModelList = await _categoryRepo.GetCourseCategoryList();
+            var categoryList = await _categoryRepo.GetCourseCategoryList();
+            var categoryDtoList = categoryList.Select(
+                category => CourseCategoryMapper.ToCourseCategoryDto(category)
+            );
             
-            categoryModelList.ForEach(category => 
-            CourseCategoryMapper.ToCourseCategoryDto(category));
-            
-            return Ok(categoryModelList);
+            return Ok(categoryDtoList);
         }
 
         [HttpGet]
