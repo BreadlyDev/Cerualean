@@ -1,73 +1,63 @@
-using Cerualean.Domain.Modules.CourseCategories.Helpers;
-using Cerualean.Domain.Modules.CourseCategories.Interfaces;
 using Cerualean.Domain.CourseModule.Dtos;
-using Cerualean.Domain.CourseModule.Helpers;
-using Cerualean.Domain.CourseModule.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Cerualean.Domain.Modules.Courses.Interfaces;
+using Cerualean.Domain.Common.Exceptions;
 
 namespace Cerualean.Domain.CourseModule
 {
     [Route("/course/category/")]
     public class CourseController : ControllerBase
     {
-        private readonly ICourseRepository _courseRepo;
-        private readonly ICourseCategoryRepository _categoryRepo;
-        public CourseController(
-            ICourseRepository courseRepo,
-            ICourseCategoryRepository categoryRepo
-        )
+        private readonly ICourseService _courseService;
+        public CourseController(ICourseService courseService)
         {
-            _courseRepo = courseRepo;
-            _categoryRepo = categoryRepo;
+            _courseService = courseService;
         }
 
         [HttpGet]
         [Route("{categoryId:guid}/course/list")]
         public async Task<IActionResult> GetListByCategory([FromRoute] Guid categoryId)
         {
-            var categoryExists = await _categoryRepo.CourseCategoryExists(categoryId);
-            if (!categoryExists)
+            try
             {
-                return NotFound(CourseCategoryExceptionMessages.CourseCategoryNotFound);
+                return Ok(await _courseService.GetCourseListByCategory(categoryId));
             }
-
-            var coursesModelList = await _courseRepo.GetCourseListByCategory(categoryId);
-            var coursesDto = coursesModelList.Select(course => CourseMapper.ToCourseDto(course));
-
-            return Ok(coursesDto);
+            catch (NotFoundException e)
+            {
+                return NotFound(e.Message);
+            }
         }
 
         [HttpGet]
         [Route("course/{id:guid}")]
         public async Task<IActionResult> GetById([FromRoute] Guid id)
         {
-            var courseModel = await _courseRepo.GetCourseById(id);
-
-            if (courseModel == null)
+            try
             {
-                return NotFound(CourseExceptionMessages.CourseNotFoundError);
+                return Ok(await _courseService.GetCourseById(id));
             }
-
-            return Ok(courseModel);
+            catch (NotFoundException e)
+            {
+                return NotFound(e.Message);
+            }
         }
 
         [HttpPost]
         [Route("course/{categoryId:guid}/create/")]
         public async Task<IActionResult> Create(
-            [FromRoute] Guid categoryId, [FromBody]
-            CreateCourseDto courseDto
+            [FromRoute] Guid categoryId,
+            [FromBody] CreateCourseDto courseDto
         )
         {
-            var categoryExists = await _categoryRepo.CourseCategoryExists(categoryId);
-            if (!categoryExists)
+            try
             {
-                return NotFound(CourseCategoryExceptionMessages.CourseCategoryNotFound);
+                var courseModel = _courseService.CreateCourse(categoryId, courseDto);
+                return CreatedAtAction(nameof(GetById), new { id = courseModel.Id }, courseModel);
             }
-
-            var courseModel = _courseRepo.CreateCourse(
-                CourseMapper.ToCourseFromCreateDto(courseDto, categoryId)
-            );
-            return CreatedAtAction(nameof(GetById), new { id = courseModel.Id }, courseModel);
+            catch (NotFoundException e)
+            {
+                return NotFound(e.Message);
+            }
         }
 
         [HttpPut]
@@ -77,37 +67,28 @@ namespace Cerualean.Domain.CourseModule
             [FromBody] UpdateCourseDto courseDto
         )
         {
-            var categoryExists = await _categoryRepo.CourseCategoryExists(courseDto.CategoryId);
-
-            if (!categoryExists)
+            try
             {
-                return NotFound(CourseCategoryExceptionMessages.CourseCategoryNotFound);
+                return Ok(await _courseService.UpdateCourse(id, courseDto));
             }
-
-            var existingCourseModel = await _courseRepo.UpdateCourse(
-                id, courseDto.ToCourseFromUpdateDto()
-            );
-
-            if (existingCourseModel == null)
+            catch (NotFoundException e)
             {
-                return NotFound(CourseExceptionMessages.CourseNotFoundError);
+                return NotFound(e.Message);
             }
-
-            return Ok(existingCourseModel);
         }
 
         [HttpDelete]
         [Route("course/{id:guid}")]
         public async Task<IActionResult> Delete([FromRoute] Guid id)
         {
-            var courseModel = await _courseRepo.DeleteCourse(id);
-
-            if (courseModel == null) 
+            try 
             {
-                return NotFound(CourseExceptionMessages.CourseNotFoundError);
+                return Ok(await _courseService.DeleteCourse(id));
             }
-
-            return Ok(courseModel);
+            catch (NotFoundException e)
+            {
+                return NotFound(e.Message);
+            }
         }
     }
 }
