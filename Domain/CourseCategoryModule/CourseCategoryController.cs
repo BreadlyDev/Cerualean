@@ -27,7 +27,7 @@ namespace Cerualean.Domain.CourseCategoryModule
         }
 
         [HttpGet]
-        [Route("{id:int}")]
+        [Route("{id:guid}")]
         public async Task<IActionResult> GetById([FromRoute] Guid id)
         {
             var categoryModel = await _categoryRepo.GetCourseCategoryById(id);
@@ -52,7 +52,7 @@ namespace Cerualean.Domain.CourseCategoryModule
         }
 
         [HttpPut]
-        [Route("{id:int}")]
+        [Route("{id:guid}")]
         public async Task<IActionResult> Update(
             [FromRoute] Guid id,
             [FromBody] UpdateCourseCategoryDto categoryDto)
@@ -69,7 +69,7 @@ namespace Cerualean.Domain.CourseCategoryModule
         }
 
         [HttpDelete]
-        [Route("{id:int}")]
+        [Route("{id:guid}")]
         public async Task<IActionResult> Delete([FromRoute] Guid id)
         {
             var categoryModel = await _categoryRepo.DeleteCourseCategory(id);
