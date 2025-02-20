@@ -8,5 +8,6 @@ namespace Cerualean.Domain.CourseCategoryModule.Interfaces
         public Task<CourseCategory> CreateCourseCategory(CourseCategory category);
         public Task<CourseCategory?> UpdateCourseCategory(Guid id, CourseCategory category);
         public Task<CourseCategory?> DeleteCourseCategory(Guid id);
+        public Task<bool> CourseCategoryExists(Guid id);
     }
 }

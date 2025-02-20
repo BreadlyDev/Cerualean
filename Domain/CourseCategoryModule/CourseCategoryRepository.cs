@@ -42,9 +42,9 @@ namespace Cerualean.Domain.CourseCategoryModule
         {
             return await _context.CourseCategories.FindAsync(id);
         }
-        public async Task<CourseCategory?> GetCourseCategoryByTitle(string name)
+        public async Task<CourseCategory?> GetCourseCategoryByTitle(string title)
         {
-            return await _context.CourseCategories.FirstOrDefaultAsync(x => x.Title == name);
+            return await _context.CourseCategories.FirstOrDefaultAsync(x => x.Title == title);
         }
 
         public async Task<CourseCategory?> UpdateCourseCategory(Guid id, CourseCategory category)
@@ -61,6 +61,11 @@ namespace Cerualean.Domain.CourseCategoryModule
 
             await _context.SaveChangesAsync();
             return category;
+        }
+
+        public async Task<bool> CourseCategoryExists(Guid id)
+        {
+            return await _context.CourseCategories.AnyAsync(course => course.Id == id);
         }
     }
 }
