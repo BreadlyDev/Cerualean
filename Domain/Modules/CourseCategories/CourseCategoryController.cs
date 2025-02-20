@@ -1,6 +1,5 @@
 using Cerualean.Domain.Common.Exceptions;
 using Cerualean.Domain.Modules.CourseCategories.Dtos;
-using Cerualean.Domain.Modules.CourseCategories.Helpers;
 using Cerualean.Domain.Modules.CourseCategories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -46,7 +45,7 @@ namespace Cerualean.Domain.Modules.CourseCategories
             return CreatedAtAction(nameof(GetById), new { id = categoryModel.Id }, categoryModel);
         }
 
-        [HttpPut]
+        [HttpPut, HttpPatch]
         [Route("{id:guid}")]
         public async Task<IActionResult> Update(
             [FromRoute] Guid id,

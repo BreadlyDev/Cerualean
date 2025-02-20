@@ -43,7 +43,7 @@ namespace Cerualean.Domain.CourseModule
         }
 
         [HttpPost]
-        [Route("course/{categoryId:guid}/create/")]
+        [Route("{categoryId:guid}/create/")]
         public async Task<IActionResult> Create(
             [FromRoute] Guid categoryId,
             [FromBody] CreateCourseDto courseDto
@@ -60,7 +60,7 @@ namespace Cerualean.Domain.CourseModule
             }
         }
 
-        [HttpPut]
+        [HttpPut, HttpPatch]
         [Route("course/{id:guid}")]
         public async Task<IActionResult> Update(
             [FromRoute] Guid id,

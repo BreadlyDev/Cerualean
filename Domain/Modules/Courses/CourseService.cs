@@ -1,11 +1,9 @@
 using Cerualean.Domain.Common.Exceptions;
-using Cerualean.Domain.CourseModule;
 using Cerualean.Domain.CourseModule.Dtos;
 using Cerualean.Domain.CourseModule.Helpers;
 using Cerualean.Domain.CourseModule.Interfaces;
 using Cerualean.Domain.Modules.CourseCategories.Interfaces;
 using Cerualean.Domain.Modules.Courses.Interfaces;
-using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace Cerualean.Domain.Modules.Courses
 {
