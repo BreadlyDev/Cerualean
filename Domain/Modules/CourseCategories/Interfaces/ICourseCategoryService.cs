@@ -7,8 +7,8 @@ namespace Cerualean.Domain.Modules.CourseCategories.Interfaces
         public Task<List<CourseCategoryDto>> GetCourseCategoryList();
         public Task<CourseCategoryDto> GetCourseCategoryById(Guid id);
         public Task<CourseCategoryDto> GetCourseCategoryByTitle(string title);
-        public Task<CourseCategoryDto> CreateCourseCategory(CreateCourseCategoryDto category);
-        public Task<CourseCategoryDto> UpdateCourseCategory(Guid id, UpdateCourseCategoryDto category);
+        public Task<CourseCategoryDto> CreateCourseCategory(CreateCourseCategoryDto categoryDto);
+        public Task<CourseCategoryDto> UpdateCourseCategory(Guid id, UpdateCourseCategoryDto categoryDto);
         public Task<CourseCategoryDto> DeleteCourseCategory(Guid id);
     }
 }
