@@ -20,7 +20,7 @@ namespace Cerualean.Domain.CourseCategoryModule
         {
             var categoryList = await _categoryRepo.GetCourseCategoryList();
             var categoryDtoList = categoryList.Select(
-                category => CourseCategoryMapper.ToCourseCategoryDto(category)
+                category => category.ToCourseCategoryDto()
             );
             
             return Ok(categoryDtoList);
@@ -37,7 +37,7 @@ namespace Cerualean.Domain.CourseCategoryModule
                 return NotFound(CourseCategoryErrors.CourseCategoryWasNotFound);
             }
 
-            return Ok(CourseCategoryMapper.ToCourseCategoryDto(categoryModel));
+            return Ok(categoryModel.ToCourseCategoryDto());
         }
 
         [HttpPost]
@@ -46,7 +46,7 @@ namespace Cerualean.Domain.CourseCategoryModule
             [FromBody] CreateCourseCategoryDto categoryDto)
         {
             var categoryModel = await _categoryRepo.CreateCourseCategory(
-                CourseCategoryMapper.ToCourseCategoryFromCreateDto(categoryDto)
+                categoryDto.ToCourseCategoryFromCreateDto()
             );
             return CreatedAtAction(nameof(GetById), new { id = categoryModel.Id }, categoryModel);
         }
@@ -57,8 +57,9 @@ namespace Cerualean.Domain.CourseCategoryModule
             [FromRoute] Guid id,
             [FromBody] UpdateCourseCategoryDto categoryDto)
         {
-            var categoryModel = await _categoryRepo.UpdateCourseCategory(id,
-            CourseCategoryMapper.ToCourseCategoryFromUpdateDto(categoryDto));
+            var categoryModel = await _categoryRepo.UpdateCourseCategory(
+                id, categoryDto.ToCourseCategoryFromUpdateDto()
+            );
 
             if (categoryModel == null)
             {
