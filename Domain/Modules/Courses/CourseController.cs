@@ -1,5 +1,5 @@
-using Cerualean.Domain.CourseCategoryModule.Helpers;
-using Cerualean.Domain.CourseCategoryModule.Interfaces;
+using Cerualean.Domain.Modules.CourseCategories.Helpers;
+using Cerualean.Domain.Modules.CourseCategories.Interfaces;
 using Cerualean.Domain.CourseModule.Dtos;
 using Cerualean.Domain.CourseModule.Helpers;
 using Cerualean.Domain.CourseModule.Interfaces;
@@ -28,7 +28,7 @@ namespace Cerualean.Domain.CourseModule
             var categoryExists = await _categoryRepo.CourseCategoryExists(categoryId);
             if (!categoryExists)
             {
-                return NotFound(CourseCategoryErrors.CourseCategoryWasNotFound);
+                return NotFound(CourseCategoryExceptionMessages.CourseCategoryNotFound);
             }
 
             var coursesModelList = await _courseRepo.GetCourseListByCategory(categoryId);
@@ -61,7 +61,7 @@ namespace Cerualean.Domain.CourseModule
             var categoryExists = await _categoryRepo.CourseCategoryExists(categoryId);
             if (!categoryExists)
             {
-                return NotFound(CourseCategoryErrors.CourseCategoryWasNotFound);
+                return NotFound(CourseCategoryExceptionMessages.CourseCategoryNotFound);
             }
 
             var courseModel = _courseRepo.CreateCourse(
@@ -81,7 +81,7 @@ namespace Cerualean.Domain.CourseModule
 
             if (!categoryExists)
             {
-                return NotFound(CourseCategoryErrors.CourseCategoryWasNotFound);
+                return NotFound(CourseCategoryExceptionMessages.CourseCategoryNotFound);
             }
 
             var existingCourseModel = await _courseRepo.UpdateCourse(

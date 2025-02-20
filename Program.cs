@@ -1,6 +1,6 @@
 using Cerualean.Data;
-using Cerualean.Domain.CourseCategoryModule;
-using Cerualean.Domain.CourseCategoryModule.Interfaces;
+using Cerualean.Domain.Modules.CourseCategories;
+using Cerualean.Domain.Modules.CourseCategories.Interfaces;
 using Cerualean.Domain.CourseModule;
 using Cerualean.Domain.CourseModule.Interfaces;
 using Microsoft.EntityFrameworkCore;

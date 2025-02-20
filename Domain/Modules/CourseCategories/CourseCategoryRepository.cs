@@ -1,8 +1,8 @@
 using Cerualean.Data;
-using Cerualean.Domain.CourseCategoryModule.Interfaces;
+using Cerualean.Domain.Modules.CourseCategories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace Cerualean.Domain.CourseCategoryModule
+namespace Cerualean.Domain.Modules.CourseCategories
 {
     public class CourseCategoryRepository : ICourseCategoryRepository
     {

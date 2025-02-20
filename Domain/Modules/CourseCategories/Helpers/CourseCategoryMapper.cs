@@ -1,6 +1,6 @@
-using Cerualean.Domain.CourseCategoryModule.Dtos;
+using Cerualean.Domain.Modules.CourseCategories.Dtos;
 
-namespace Cerualean.Domain.CourseCategoryModule.Helpers
+namespace Cerualean.Domain.Modules.CourseCategories.Helpers
 {
     public static class CourseCategoryMapper
     {
@@ -13,8 +13,7 @@ namespace Cerualean.Domain.CourseCategoryModule.Helpers
             {
                 Id = courseCategory.Id,
                 Title = courseCategory.Title,
-                Description = courseCategory.Description == null ? 
-                "" : courseCategory.Description
+                Description = courseCategory.Description 
             };
         }
 

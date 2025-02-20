@@ -1,5 +1,5 @@
 
-namespace Cerualean.Domain.CourseCategoryModule.Dtos
+namespace Cerualean.Domain.Modules.CourseCategories.Dtos
 {
     public class CourseCategoryDto
     {

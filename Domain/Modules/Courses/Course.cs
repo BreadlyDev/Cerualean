@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations.Schema;
-using Cerualean.Domain.CourseCategoryModule;
+using Cerualean.Domain.Modules.CourseCategories;
 
 namespace Cerualean.Domain.CourseModule
 {

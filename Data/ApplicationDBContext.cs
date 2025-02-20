@@ -1,4 +1,4 @@
-using Cerualean.Domain.CourseCategoryModule;
+using Cerualean.Domain.Modules.CourseCategories;
 using Cerualean.Domain.CourseModule;
 using Microsoft.EntityFrameworkCore;
 

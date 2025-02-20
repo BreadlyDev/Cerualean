@@ -1,4 +1,4 @@
-namespace Cerualean.Domain.CourseCategoryModule.Interfaces
+namespace Cerualean.Domain.Modules.CourseCategories.Interfaces
 {
     public interface ICourseCategoryRepository
     {

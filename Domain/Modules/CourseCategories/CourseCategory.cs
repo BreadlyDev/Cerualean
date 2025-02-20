@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using Cerualean.Domain.CourseModule;
 
-namespace Cerualean.Domain.CourseCategoryModule
+namespace Cerualean.Domain.Modules.CourseCategories
 {
     [Table("course_category")]
     public class CourseCategory
