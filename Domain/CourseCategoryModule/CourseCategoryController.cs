@@ -15,13 +15,13 @@ namespace Cerualean.Domain.CourseCategoryModule
         }
 
         [HttpGet]
-        [Route("all")]
+        [Route("list")]
         public async Task<IActionResult> GetList()
         {
             var categoryModelList = await _categoryRepo.GetCourseCategoryList();
             
             categoryModelList.ForEach(category => 
-            CourseCategoryMappers.ToCourseCategoryDto(category));
+            CourseCategoryMapper.ToCourseCategoryDto(category));
             
             return Ok(categoryModelList);
         }
@@ -37,7 +37,7 @@ namespace Cerualean.Domain.CourseCategoryModule
                 return NotFound(CourseCategoryErrors.CourseCategoryWasNotFound);
             }
 
-            return Ok(CourseCategoryMappers.ToCourseCategoryDto(categoryModel));
+            return Ok(CourseCategoryMapper.ToCourseCategoryDto(categoryModel));
         }
 
         [HttpPost]
@@ -46,7 +46,7 @@ namespace Cerualean.Domain.CourseCategoryModule
             [FromBody] CreateCourseCategoryDto categoryDto)
         {
             var categoryModel = await _categoryRepo.CreateCourseCategory(
-                CourseCategoryMappers.ToCourseCategoryFromCreateDto(categoryDto)
+                CourseCategoryMapper.ToCourseCategoryFromCreateDto(categoryDto)
             );
             return CreatedAtAction(nameof(GetById), new { id = categoryModel.Id }, categoryModel);
         }
@@ -58,7 +58,7 @@ namespace Cerualean.Domain.CourseCategoryModule
             [FromBody] UpdateCourseCategoryDto categoryDto)
         {
             var categoryModel = await _categoryRepo.UpdateCourseCategory(id,
-            CourseCategoryMappers.ToCourseCategoryFromUpdateDto(categoryDto));
+            CourseCategoryMapper.ToCourseCategoryFromUpdateDto(categoryDto));
 
             if (categoryModel == null)
             {
