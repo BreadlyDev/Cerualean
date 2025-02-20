@@ -45,7 +45,7 @@ namespace Cerualean.Domain.CourseModule
 
             if (courseModel == null)
             {
-                return NotFound(CourseErrors.CourseNotFoundError);
+                return NotFound(CourseExceptionMessages.CourseNotFoundError);
             }
 
             return Ok(courseModel);
@@ -90,7 +90,7 @@ namespace Cerualean.Domain.CourseModule
 
             if (existingCourseModel == null)
             {
-                return NotFound(CourseErrors.CourseNotFoundError);
+                return NotFound(CourseExceptionMessages.CourseNotFoundError);
             }
 
             return Ok(existingCourseModel);
@@ -104,7 +104,7 @@ namespace Cerualean.Domain.CourseModule
 
             if (courseModel == null) 
             {
-                return NotFound(CourseErrors.CourseNotFoundError);
+                return NotFound(CourseExceptionMessages.CourseNotFoundError);
             }
 
             return Ok(courseModel);
