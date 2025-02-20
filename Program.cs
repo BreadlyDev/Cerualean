@@ -5,6 +5,8 @@ using Cerualean.Domain.CourseModule;
 using Cerualean.Domain.CourseModule.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Cerualean.Domain.Modules.Courses.Interfaces;
+using Cerualean.Domain.Modules.Courses;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +25,8 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
 });
 builder.Services.AddScoped<ICourseCategoryRepository, CourseCategoryRepository>();
 builder.Services.AddScoped<ICourseRepository, CourseRepository>();
+builder.Services.AddScoped<ICourseCategoryService, CourseCategoryService>();
+builder.Services.AddScoped<ICourseService, CourseService>();
 
 var app = builder.Build();
 
