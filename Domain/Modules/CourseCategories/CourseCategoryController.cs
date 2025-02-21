@@ -19,13 +19,13 @@ namespace Cerualean.Domain.Modules.CourseCategories
         [Route("list")]
         public async Task<IActionResult> GetList()
         {
-            try 
+            try
             {
                 return Ok(await _categoryService.GetCourseCategoryList());
             }
             catch (Exception)
             {
-                return StatusCode(500, "Internal server error");
+                return StatusCode(500, ExceptionMessages.InternalServerError);
             }
         }
 
@@ -41,6 +41,10 @@ namespace Cerualean.Domain.Modules.CourseCategories
             {
                 return NotFound(e.Message);
             }
+            catch (Exception)
+            {
+                return StatusCode(500, ExceptionMessages.InternalServerError);
+            }
         }
 
         [HttpPost]
@@ -49,8 +53,15 @@ namespace Cerualean.Domain.Modules.CourseCategories
             [FromBody] CreateCourseCategoryDto categoryDto
         )
         {
-            var categoryModel = await _categoryService.CreateCourseCategory(categoryDto);
-            return CreatedAtAction(nameof(GetById), new { id = categoryModel.Id }, categoryModel);
+            try
+            {
+                var categoryModel = await _categoryService.CreateCourseCategory(categoryDto);
+                return CreatedAtAction(nameof(GetById), new { id = categoryModel.Id }, categoryModel);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, ExceptionMessages.InternalServerError);
+            }
         }
 
         [HttpPut, HttpPatch]
@@ -68,6 +79,10 @@ namespace Cerualean.Domain.Modules.CourseCategories
             {
                 return NotFound(e.Message);
             }
+            catch (Exception)
+            {
+                return StatusCode(500, ExceptionMessages.InternalServerError);
+            }
         }
 
         [HttpDelete]
@@ -81,6 +96,10 @@ namespace Cerualean.Domain.Modules.CourseCategories
             catch (NotFoundException e)
             {
                 return NotFound(e.Message);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, ExceptionMessages.InternalServerError);
             }
         }
     }

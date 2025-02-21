@@ -12,8 +12,23 @@ namespace Cerualean.Domain.CourseModule.Helpers
                 Title = courseModel.Title,
                 Description = courseModel.Description,
                 Duration = courseModel.Duration,
+                CategoryId = courseModel.CategoryId,
                 Price = courseModel.Price,
                 CreatedTime = courseModel.CreatedTime
+            };
+        }
+
+        public static Course ToCourseFromCourseDto(this CourseDto courseDto) 
+        {
+            return new Course 
+            {
+                Id = courseDto.Id,
+                Title = courseDto.Title,
+                Description = courseDto.Description,
+                Duration = courseDto.Duration,
+                CategoryId = courseDto.CategoryId,
+                Price = courseDto.Price,
+                CreatedTime = courseDto.CreatedTime
             };
         }
 

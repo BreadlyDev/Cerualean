@@ -5,7 +5,6 @@ using Cerualean.Domain.Common.Exceptions;
 
 namespace Cerualean.Domain.CourseModule
 {
-    [Route("/course/category/")]
     public class CourseController : ControllerBase
     {
         private readonly ICourseService _courseService;
@@ -26,6 +25,10 @@ namespace Cerualean.Domain.CourseModule
             {
                 return NotFound(e.Message);
             }
+            catch (Exception)
+            {
+                return StatusCode(500, ExceptionMessages.InternalServerError);
+            }
         }
 
         [HttpGet]
@@ -39,6 +42,10 @@ namespace Cerualean.Domain.CourseModule
             catch (NotFoundException e)
             {
                 return NotFound(e.Message);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, ExceptionMessages.InternalServerError);
             }
         }
 
@@ -58,6 +65,10 @@ namespace Cerualean.Domain.CourseModule
             {
                 return NotFound(e.Message);
             }
+            catch (Exception)
+            {
+                return StatusCode(500, ExceptionMessages.InternalServerError);
+            }
         }
 
         [HttpPut, HttpPatch]
@@ -75,6 +86,10 @@ namespace Cerualean.Domain.CourseModule
             {
                 return NotFound(e.Message);
             }
+            catch (Exception)
+            {
+                return StatusCode(500, ExceptionMessages.InternalServerError);
+            }
         }
 
         [HttpDelete]
@@ -88,6 +103,10 @@ namespace Cerualean.Domain.CourseModule
             catch (NotFoundException e)
             {
                 return NotFound(e.Message);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, ExceptionMessages.InternalServerError);
             }
         }
     }
