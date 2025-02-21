@@ -1,12 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Cerualean.Domain.Modules.Lessons.Helpers
 {
-    public class LessonExceptionMessages
+    public static class LessonExceptionMessages
     {
-        
+        public readonly static string LessonNotFound
+        = "Lesson not found";       
     }
 }
