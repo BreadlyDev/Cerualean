@@ -27,7 +27,7 @@ namespace Cerualean.Domain.Modules.Courses
 
             if (!categoryExists)
             {
-                throw new NotFoundException(CourseExceptionMessages.CourseNotFoundError);
+                throw new NotFoundException(CourseExceptionMessages.CourseNotFound);
             }
 
             var courseModel = await _courseRepo.CreateCourse(
@@ -39,25 +39,17 @@ namespace Cerualean.Domain.Modules.Courses
 
         public async Task<CourseDto> DeleteCourse(int id)
         {
-            var courseModel = await _courseRepo.DeleteCourse(id);
-
-            if (courseModel == null)
-            {
-                throw new NotFoundException(CourseExceptionMessages.CourseNotFoundError);
-            }
-
+            var courseModel = await _courseRepo.DeleteCourse(id) 
+            ?? throw new NotFoundException(CourseExceptionMessages.CourseNotFound);
+            
             return courseModel.ToCourseDto();
         }
 
         public async Task<CourseDto> GetCourseById(int id)
         {
-            var courseModel = await _courseRepo.GetCourseById(id);
-
-            if (courseModel == null)
-            {
-                throw new NotFoundException(CourseExceptionMessages.CourseNotFoundError);
-            }
-
+            var courseModel = await _courseRepo.GetCourseById(id) 
+            ?? throw new NotFoundException(CourseExceptionMessages.CourseNotFound);
+            
             return courseModel.ToCourseDto();
         }
 
@@ -67,7 +59,7 @@ namespace Cerualean.Domain.Modules.Courses
 
             if (courseModel == null)
             {
-                throw new NotFoundException(CourseExceptionMessages.CourseNotFoundError);
+                throw new NotFoundException(CourseExceptionMessages.CourseNotFound);
             }
 
             return courseModel.ToCourseDto();
@@ -85,7 +77,7 @@ namespace Cerualean.Domain.Modules.Courses
 
             if (!categoryExists)
             {
-                throw new NotFoundException(CourseExceptionMessages.CourseNotFoundError);
+                throw new NotFoundException(CourseExceptionMessages.CourseNotFound);
             }
 
             var courseModelList = await _courseRepo.GetCourseListByCategory(categoryId);
@@ -95,13 +87,9 @@ namespace Cerualean.Domain.Modules.Courses
         public async Task<CourseDto> UpdateCourse(int id, UpdateCourseDto courseDto)
         {
             
-            var courseModel = await _courseRepo.UpdateCourse(id, courseDto.ToCourseFromUpdateDto());
-
-            if (courseModel == null)
-            {
-                throw new NotFoundException(CourseExceptionMessages.CourseNotFoundError);
-            }
-
+            var courseModel = await _courseRepo.UpdateCourse(id, courseDto.ToCourseFromUpdateDto()) 
+            ?? throw new NotFoundException(CourseExceptionMessages.CourseNotFound);
+            
             return courseModel.ToCourseDto();
         }
     }

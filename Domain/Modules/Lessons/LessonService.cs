@@ -26,7 +26,7 @@ namespace Cerualean.Domain.Modules.Lessons
 
             if (!courseExists)
             {
-                throw new NotFoundException(CourseExceptionMessages.CourseNotFoundError);
+                throw new NotFoundException(CourseExceptionMessages.CourseNotFound);
             }
 
             var lessonModel = await _lessonRepo.CreateLesson(
@@ -38,37 +38,25 @@ namespace Cerualean.Domain.Modules.Lessons
 
         public async Task<LessonDto> DeleteLesson(int id)
         {
-            var lessonModel = await _lessonRepo.DeleteLesson(id);
-
-            if (lessonModel == null)
-            {
-                throw new NotFoundException(LessonExceptionMessages.LessonNotFound);
-            }
-
+            var lessonModel = await _lessonRepo.DeleteLesson(id) 
+            ?? throw new NotFoundException(LessonExceptionMessages.LessonNotFound);
+            
             return lessonModel.ToLessonDto();
         }
 
         public async Task<LessonDto> GetLessonById(int id)
         {
-            var lessonModel = await _lessonRepo.GetLessonById(id);
-
-            if (lessonModel == null)
-            {
-                throw new NotFoundException(LessonExceptionMessages.LessonNotFound);
-            }
+            var lessonModel = await _lessonRepo.GetLessonById(id) 
+            ?? throw new NotFoundException(LessonExceptionMessages.LessonNotFound);
 
             return lessonModel.ToLessonDto();
         }
 
         public async Task<LessonDto> GetLessonByTitle(string title)
         {
-            var lessonModel = await _lessonRepo.GetLessonByTitle(title);
-
-            if (lessonModel == null)
-            {
-                throw new NotFoundException(LessonExceptionMessages.LessonNotFound);
-            }
-
+            var lessonModel = await _lessonRepo.GetLessonByTitle(title)
+            ?? throw new NotFoundException(LessonExceptionMessages.LessonNotFound);
+        
             return lessonModel.ToLessonDto();
         }
 
@@ -88,13 +76,8 @@ namespace Cerualean.Domain.Modules.Lessons
         {
             var lessonModel = await _lessonRepo.UpdateLesson(
                 id, lessonDto.ToLessonFromUpdateLessonDto()
-            );
-
-            if (lessonModel == null)
-            {
-                throw new NotFoundException(LessonExceptionMessages.LessonNotFound);
-            }
-
+            ) 
+            ?? throw new NotFoundException(LessonExceptionMessages.LessonNotFound);
             return lessonModel.ToLessonDto();
         }
     }

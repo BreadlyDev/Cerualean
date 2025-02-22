@@ -28,49 +28,38 @@ namespace Cerualean.Domain.Modules.CourseCategories
 
         public async Task<CourseCategoryDto> DeleteCourseCategory(int id)
         {
-            var courseModel = await _categoryRepo.DeleteCourseCategory(id);
+            var courseModel = await _categoryRepo.DeleteCourseCategory(id) 
+            ?? throw new NotFoundException(
+                CourseCategoryExceptionMessages.CourseCategoryNotFound
+            );
             
-            if (courseModel == null)
-            {
-                throw new NotFoundException(
-                    CourseCategoryExceptionMessages.CourseCategoryNotFound
-                );
-            }
-
             return courseModel.ToCourseCategoryDto();
         }
 
         public async Task<CourseCategoryDto> GetCourseCategoryById(int id)
         {
-            var courseModel = await _categoryRepo.GetCourseCategoryById(id);
-
-            if (courseModel == null)
-            {
-                throw new NotFoundException(
-                    CourseCategoryExceptionMessages.CourseCategoryNotFound
-                );
-            }
-
+            var courseModel = await _categoryRepo.GetCourseCategoryById(id) 
+            ?? throw new NotFoundException(
+                CourseCategoryExceptionMessages.CourseCategoryNotFound
+            );
+            
             return courseModel.ToCourseCategoryDto();
         }
 
         public async Task<CourseCategoryDto> GetCourseCategoryByTitle(string title)
         {
-            var courseModel = await _categoryRepo.GetCourseCategoryByTitle(title);
-
-            if (courseModel == null)
-            {
-                throw new NotFoundException(
-                    CourseCategoryExceptionMessages.CourseCategoryNotFound
-                );
-            }
-
+            var courseModel = await _categoryRepo.GetCourseCategoryByTitle(title) 
+            ?? throw new NotFoundException(
+                CourseCategoryExceptionMessages.CourseCategoryNotFound
+            );
+            
             return courseModel.ToCourseCategoryDto();    
         }
 
         public async Task<List<CourseCategoryDto>> GetCourseCategoryList()
         {
             var courseModelList = await _categoryRepo.GetCourseCategoryList();
+            
             return courseModelList.Select(course => course.ToCourseCategoryDto()).ToList();
         }
 
@@ -78,15 +67,10 @@ namespace Cerualean.Domain.Modules.CourseCategories
         {
             var courseModel = await _categoryRepo.UpdateCourseCategory(
                 id, categoryDto.ToCourseCategoryFromUpdateDto()
+            ) ?? throw new NotFoundException(
+                CourseCategoryExceptionMessages.CourseCategoryNotFound
             );
-
-            if (courseModel == null)
-            {
-                throw new NotFoundException(
-                    CourseCategoryExceptionMessages.CourseCategoryNotFound
-                );
-            }
-
+            
             return courseModel.ToCourseCategoryDto();    
         }
     }
