@@ -58,7 +58,7 @@ namespace Cerualean.Domain.Modules.Lessons
         {
             try
             {
-                var LessonModel = _lessonService.CreateLesson(categoryId, LessonDto);
+                var LessonModel = await _lessonService.CreateLesson(categoryId, LessonDto);
                 return CreatedAtAction(nameof(GetById), new { id = LessonModel.Id }, LessonModel);
             }
             catch (NotFoundException e)

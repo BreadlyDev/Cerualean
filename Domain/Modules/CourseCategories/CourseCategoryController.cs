@@ -1,7 +1,6 @@
 using Cerualean.Domain.Common.Exceptions;
 using Cerualean.Domain.Modules.CourseCategories.Dtos;
 using Cerualean.Domain.Modules.CourseCategories.Interfaces;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cerualean.Domain.Modules.CourseCategories
