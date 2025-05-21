@@ -1,0 +1,77 @@
+# Visual Studio / Rider / IDE related
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+/WebApi/bin
+/WebApi/obj
+
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# User-specific files
+*.rsuser
+*.DotSettings.user
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Logs
+*.log
+
+# MSBuild generated files
+*.pidb
+*.svclog
+*.pdb
+
+# DotCover
+*.dotCover
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# Backup & report files from converting an old project file
+*.Backup*
+*.Report.xml
+
+# Others
+*.dbmdl
+*.jfm
+
+# Temporary files
+*.tmp
+*.temp
+
+# SQLite files
+*.sqlite
+*.sqlite3
+
+# npm packages
+node_modules/
+
+# yarn packages
+.yarn/
+
+# Mac system files
+.DS_Store

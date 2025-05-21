@@ -2786,19 +2786,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bread\\.nuget\\packages\\": {}
+    "/home/bread/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "/home/bread/Programming/Programs/C#/EsAcademy/DataAccess/DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\DataAccess\\DataAccess.csproj",
-      "packagesPath": "C:\\Users\\bread\\.nuget\\packages\\",
-      "outputPath": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\DataAccess\\obj\\",
+      "projectPath": "/home/bread/Programming/Programs/C#/EsAcademy/DataAccess/DataAccess.csproj",
+      "packagesPath": "/home/bread/.nuget/packages/",
+      "outputPath": "/home/bread/Programming/Programs/C#/EsAcademy/DataAccess/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bread\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/bread/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -2822,7 +2822,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -2852,6 +2852,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[9.0.4, 9.0.4]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -2860,7 +2866,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.105/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

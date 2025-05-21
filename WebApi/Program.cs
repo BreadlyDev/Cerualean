@@ -40,11 +40,11 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-	app.UseSwagger();
-	app.UseSwaggerUI();
-}
+// if (app.Environment.IsDevelopment())
+// {
+app.UseSwagger();
+app.UseSwaggerUI();
+// }
 
 app.UseHttpsRedirection();
 app.UseCookiePolicy(new CookiePolicyOptions
@@ -59,6 +59,10 @@ app.UseAuthorization();
 app.UseCors("AllowAlmostEverything");
 
 app.AddMappedEndpoints();
+app.MapGet("", () =>
+{
+
+});
 
 // app.MapPost("post", () =>
 // {

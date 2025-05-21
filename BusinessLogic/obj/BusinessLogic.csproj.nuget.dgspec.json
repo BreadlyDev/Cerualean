@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Programming\\VS Code Projects\\C#\\es-academy\\BusinessLogic\\BusinessLogic.csproj": {}
+    "/home/bread/Programming/Programs/C#/EsAcademy/BusinessLogic/BusinessLogic.csproj": {}
   },
   "projects": {
-    "C:\\Programming\\VS Code Projects\\C#\\es-academy\\BusinessLogic\\BusinessLogic.csproj": {
+    "/home/bread/Programming/Programs/C#/EsAcademy/BusinessLogic/BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\BusinessLogic\\BusinessLogic.csproj",
+        "projectUniqueName": "/home/bread/Programming/Programs/C#/EsAcademy/BusinessLogic/BusinessLogic.csproj",
         "projectName": "BusinessLogic",
-        "projectPath": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\BusinessLogic\\BusinessLogic.csproj",
-        "packagesPath": "C:\\Users\\bread\\.nuget\\packages\\",
-        "outputPath": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\BusinessLogic\\obj\\",
+        "projectPath": "/home/bread/Programming/Programs/C#/EsAcademy/BusinessLogic/BusinessLogic.csproj",
+        "packagesPath": "/home/bread/.nuget/packages/",
+        "outputPath": "/home/bread/Programming/Programs/C#/EsAcademy/BusinessLogic/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bread\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/bread/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -26,11 +26,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Programming\\VS Code Projects\\C#\\es-academy\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\DataAccess\\DataAccess.csproj"
+              "/home/bread/Programming/Programs/C#/EsAcademy/DataAccess/DataAccess.csproj": {
+                "projectPath": "/home/bread/Programming/Programs/C#/EsAcademy/DataAccess/DataAccess.csproj"
               },
-              "C:\\Programming\\VS Code Projects\\C#\\es-academy\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\Infrastructure\\Infrastructure.csproj"
+              "/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/Infrastructure.csproj"
               }
             }
           }
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -61,6 +61,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.4, 9.0.4]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -69,21 +75,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.105/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Programming\\VS Code Projects\\C#\\es-academy\\DataAccess\\DataAccess.csproj": {
+    "/home/bread/Programming/Programs/C#/EsAcademy/DataAccess/DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "/home/bread/Programming/Programs/C#/EsAcademy/DataAccess/DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\bread\\.nuget\\packages\\",
-        "outputPath": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\DataAccess\\obj\\",
+        "projectPath": "/home/bread/Programming/Programs/C#/EsAcademy/DataAccess/DataAccess.csproj",
+        "packagesPath": "/home/bread/.nuget/packages/",
+        "outputPath": "/home/bread/Programming/Programs/C#/EsAcademy/DataAccess/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bread\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/bread/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -107,7 +113,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -137,6 +143,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.4, 9.0.4]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -145,21 +157,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.105/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Programming\\VS Code Projects\\C#\\es-academy\\Infrastructure\\Infrastructure.csproj": {
+    "/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\bread\\.nuget\\packages\\",
-        "outputPath": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\Infrastructure\\obj\\",
+        "projectPath": "/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/home/bread/.nuget/packages/",
+        "outputPath": "/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bread\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/bread/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -171,8 +183,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Programming\\VS Code Projects\\C#\\es-academy\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\DataAccess\\DataAccess.csproj"
+              "/home/bread/Programming/Programs/C#/EsAcademy/DataAccess/DataAccess.csproj": {
+                "projectPath": "/home/bread/Programming/Programs/C#/EsAcademy/DataAccess/DataAccess.csproj"
               }
             }
           }
@@ -187,7 +199,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -213,6 +225,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[9.0.4, 9.0.4]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -221,7 +239,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.105/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

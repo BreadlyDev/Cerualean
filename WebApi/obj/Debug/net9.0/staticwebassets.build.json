@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "mEz4fcBK2tJWwMhMxPLjtCbpErgSKUcMitz4i3EuZCQ=",
+  "Hash": "Aw4yXYauKInt2ahWtQ8AKpwTYFG9s+zreNTrAWGvIXA=",
   "Source": "WebApi",
   "BasePath": "_content/WebApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\BusinessLogic\\BusinessLogic.csproj",
+      "Identity": "/home/bread/Programming/Programs/C#/EsAcademy/BusinessLogic/BusinessLogic.csproj",
       "Version": 2,
       "Source": "BusinessLogic",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -18,7 +18,7 @@
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     },
     {
-      "Identity": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\DataAccess\\DataAccess.csproj",
+      "Identity": "/home/bread/Programming/Programs/C#/EsAcademy/DataAccess/DataAccess.csproj",
       "Version": 2,
       "Source": "DataAccess",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -29,7 +29,7 @@
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     },
     {
-      "Identity": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\Infrastructure\\Infrastructure.csproj",
+      "Identity": "/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/Infrastructure.csproj",
       "Version": 2,
       "Source": "Infrastructure",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",

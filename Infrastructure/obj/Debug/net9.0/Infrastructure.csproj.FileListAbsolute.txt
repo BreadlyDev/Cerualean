@@ -139,143 +139,284 @@
 /home/bread/Программирование/Programs/C#/es-academy/Infrastructure/obj/Debug/net9.0/Infrastructure.pdb
 /home/bread/Программирование/Programs/C#/es-academy/Infrastructure/obj/Debug/net9.0/Infrastructure.genruntimeconfig.cache
 /home/bread/Программирование/Programs/C#/es-academy/Infrastructure/obj/Debug/net9.0/ref/Infrastructure.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\DataAccess.deps.json
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\DataAccess.runtimeconfig.json
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\DataAccess.staticwebassets.endpoints.json
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\DataAccess.exe
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Infrastructure.staticwebassets.endpoints.json
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Infrastructure.exe
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Infrastructure.deps.json
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Infrastructure.runtimeconfig.json
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Infrastructure.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Infrastructure.pdb
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\BCrypt.Net-Next.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Humanizer.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.Build.Locator.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Mono.TextTemplating.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Npgsql.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\System.CodeDom.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\System.Composition.AttributedModel.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\System.Composition.Convention.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\System.Composition.Hosting.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\System.Composition.Runtime.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\System.Composition.TypedParts.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\DataAccess.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\bin\Debug\net9.0\DataAccess.pdb
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\Infrastructure.csproj.AssemblyReference.cache
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\Infrastructure.AssemblyInfoInputs.cache
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\Infrastructure.AssemblyInfo.cs
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\Infrastructure.csproj.CoreCompileInputs.cache
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\Infrastructure.MvcApplicationPartsAssemblyInfo.cache
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\scopedcss\bundle\Infrastructure.styles.css
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\staticwebassets.build.json
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\staticwebassets.development.json
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\staticwebassets\msbuild.Infrastructure.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\staticwebassets\msbuild.Infrastructure.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\staticwebassets\msbuild.build.Infrastructure.props
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Infrastructure.props
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Infrastructure.props
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\Infrastr.15EFFBFE.Up2Date
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\Infrastructure.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\refint\Infrastructure.dll
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\Infrastructure.pdb
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\Infrastructure.genruntimeconfig.cache
-C:\Programming\VS Code Projects\C#\es-academy\Infrastructure\obj\Debug\net9.0\ref\Infrastructure.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/DataAccess.deps.json
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/DataAccess.runtimeconfig.json
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/DataAccess.staticwebassets.endpoints.json
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/DataAccess.exe
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Infrastructure.staticwebassets.endpoints.json
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Infrastructure.exe
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Infrastructure.deps.json
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Infrastructure.runtimeconfig.json
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Infrastructure.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Infrastructure.pdb
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/BCrypt.Net-Next.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Humanizer.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.Build.Locator.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.CodeAnalysis.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Design.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.Caching.Abstractions.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.Caching.Memory.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.Logging.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.Logging.Abstractions.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.Options.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Mono.TextTemplating.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Npgsql.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/System.CodeDom.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/System.Composition.AttributedModel.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/System.Composition.Convention.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/System.Composition.Hosting.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/System.Composition.Runtime.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/System.Composition.TypedParts.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/DataAccess.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/bin/Debug/net9.0/DataAccess.pdb
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/Infrastructure.csproj.AssemblyReference.cache
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/Infrastructure.AssemblyInfoInputs.cache
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/Infrastructure.AssemblyInfo.cs
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/Infrastructure.csproj.CoreCompileInputs.cache
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/Infrastructure.MvcApplicationPartsAssemblyInfo.cache
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/scopedcss/bundle/Infrastructure.styles.css
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/staticwebassets.build.json
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/staticwebassets.development.json
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/staticwebassets/msbuild.Infrastructure.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/staticwebassets/msbuild.Infrastructure.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/staticwebassets/msbuild.build.Infrastructure.props
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.Infrastructure.props
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.Infrastructure.props
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/staticwebassets.pack.json
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/Infrastr.15EFFBFE.Up2Date
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/Infrastructure.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/refint/Infrastructure.dll
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/Infrastructure.pdb
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/Infrastructure.genruntimeconfig.cache
+C:/Programming/VS Code Projects/C#/es-academy/Infrastructure/obj/Debug/net9.0/ref/Infrastructure.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/DataAccess.staticwebassets.endpoints.json
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/DataAccess.deps.json
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/DataAccess.runtimeconfig.json
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/DataAccess
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Infrastructure.staticwebassets.endpoints.json
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Infrastructure
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Infrastructure.deps.json
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Infrastructure.runtimeconfig.json
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Infrastructure.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Infrastructure.pdb
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/BCrypt.Net-Next.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Humanizer.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.Build.Locator.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.CodeAnalysis.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Design.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.Caching.Abstractions.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.Caching.Memory.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.Logging.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.Logging.Abstractions.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.Options.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Mono.TextTemplating.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Npgsql.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/System.CodeDom.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/System.Composition.AttributedModel.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/System.Composition.Convention.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/System.Composition.Hosting.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/System.Composition.Runtime.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/System.Composition.TypedParts.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/DataAccess.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/bin/Debug/net9.0/DataAccess.pdb
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/Infrastructure.csproj.AssemblyReference.cache
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/Infrastructure.AssemblyInfoInputs.cache
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/Infrastructure.AssemblyInfo.cs
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/Infrastructure.csproj.CoreCompileInputs.cache
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/Infrastructure.MvcApplicationPartsAssemblyInfo.cache
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/Infrastructure.sourcelink.json
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/scopedcss/bundle/Infrastructure.styles.css
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/staticwebassets.build.json
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/staticwebassets.development.json
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/staticwebassets/msbuild.Infrastructure.Microsoft.AspNetCore.StaticWebAssets.props
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/staticwebassets/msbuild.Infrastructure.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/staticwebassets/msbuild.build.Infrastructure.props
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.Infrastructure.props
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.Infrastructure.props
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/staticwebassets.pack.json
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/Infrastr.15EFFBFE.Up2Date
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/Infrastructure.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/refint/Infrastructure.dll
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/Infrastructure.pdb
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/Infrastructure.genruntimeconfig.cache
+/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/obj/Debug/net9.0/ref/Infrastructure.dll

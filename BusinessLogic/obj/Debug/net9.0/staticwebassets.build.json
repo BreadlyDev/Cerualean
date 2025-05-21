@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "t9nW9FhwWcL7q+yvum/8q7xCWUkvYtKy2KEGKdxiRAY=",
+  "Hash": "X7wW9bV16ehjbAqvyyGuCC5b9tTpYMzOcH0AoefD4E8=",
   "Source": "BusinessLogic",
   "BasePath": "_content/BusinessLogic",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\DataAccess\\DataAccess.csproj",
+      "Identity": "/home/bread/Programming/Programs/C#/EsAcademy/DataAccess/DataAccess.csproj",
       "Version": 2,
       "Source": "DataAccess",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -18,7 +18,7 @@
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     },
     {
-      "Identity": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\Infrastructure\\Infrastructure.csproj",
+      "Identity": "/home/bread/Programming/Programs/C#/EsAcademy/Infrastructure/Infrastructure.csproj",
       "Version": 2,
       "Source": "Infrastructure",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",

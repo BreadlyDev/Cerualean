@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "Q/zS6aOF3u3YEUUs964ax63HnyBtEvh8HqCu6qP2xKo=",
+  "Hash": "ZeuL9TKx6lHjldsw44oVFiedGiYqiXfdUOyNS9rVfeg=",
   "Source": "Infrastructure",
   "BasePath": "_content/Infrastructure",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Programming\\VS Code Projects\\C#\\es-academy\\DataAccess\\DataAccess.csproj",
+      "Identity": "/home/bread/Programming/Programs/C#/EsAcademy/DataAccess/DataAccess.csproj",
       "Version": 2,
       "Source": "DataAccess",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
