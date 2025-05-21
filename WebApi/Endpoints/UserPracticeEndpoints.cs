@@ -14,8 +14,8 @@ public static class UserPracticeEndpoints
 			.WithOpenApi();
 
 		userPracticeGroup.MapPost("", Create);
-		userPracticeGroup.MapGet("/practice/{practiceId:int}", GetListByPracticeId);
-		userPracticeGroup.MapGet("/practice/{practiceId:int}/user", GetByUserAndPracticeId);
+		userPracticeGroup.MapGet("/{practiceId:int}", GetListByPracticeId);
+		userPracticeGroup.MapGet("/{practiceId:int}/user", GetByUserAndPracticeId);
 		userPracticeGroup.MapGet("/me", GetListByCurrentUserId);
 	}
 

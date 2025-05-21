@@ -3,14 +3,21 @@ using BusinessLogic.Dtos.Question;
 using BusinessLogic.Dtos.UserTest;
 using BusinessLogic.Mappers;
 using DataAccess.Abstractions;
+using Infrastructure.Pagination;
 
 namespace BusinessLogic.Services;
 
 internal class UserTestService(IUserTestRepository userTestRepository) : IUserTestService
 {
-	public async Task AddAsync(CreateUserTestDto userTest, CancellationToken cancellationToken = default)
+	public async Task AddAsync(
+		CreateUserTestDto userTest,
+		CancellationToken cancellationToken = default
+	)
 	{
-		await userTestRepository.AddAsync(userTest.ToUserTestFromCreateTestDto(), cancellationToken);
+		await userTestRepository.AddAsync(
+			userTest.ToUserTestFromCreateTestDto(),
+			cancellationToken
+		);
 	}
 
 	public async Task<UserTestDto> CompleteTestAsync(int userId, int testId)
@@ -19,9 +26,17 @@ internal class UserTestService(IUserTestRepository userTestRepository) : IUserTe
 		return userTest.ToUserTestDto();
 	}
 
-	public async Task<UserTestDto?> GetByUserAndTestIdAsync(int userId, int testId, CancellationToken cancellationToken = default)
+	public async Task<UserTestDto?> GetByUserAndTestIdAsync(
+		int userId,
+		int testId,
+		CancellationToken cancellationToken = default
+	)
 	{
-		var userTest = await userTestRepository.GetByUserAndTestId(userId, testId, cancellationToken);
+		var userTest = await userTestRepository.GetByUserAndTestId(
+			userId,
+			testId,
+			cancellationToken
+		);
 
 		if (userTest == null)
 		{
@@ -31,14 +46,22 @@ internal class UserTestService(IUserTestRepository userTestRepository) : IUserTe
 		return userTest.ToUserTestDto();
 	}
 
-	public async Task<UserTestDto> StartAsync(int userId, int testId, CancellationToken ct = default)
+	public async Task<UserTestDto> StartAsync(
+		int userId,
+		int testId,
+		CancellationToken ct = default
+	)
 	{
 		await userTestRepository.StartTestAsync(userId, testId, ct);
 		var userTest = await userTestRepository.GetOrCompleteIfExpiredAsync(userId, testId, ct);
 		return userTest.ToUserTestDto();
 	}
 
-	public async Task<UserTestDto> CompleteAsync(int userId, int testId, CancellationToken ct = default)
+	public async Task<UserTestDto> CompleteAsync(
+		int userId,
+		int testId,
+		CancellationToken ct = default
+	)
 	{
 		var userTest = await userTestRepository.CompleteTestAsync(userId, testId, ct);
 		return userTest.ToUserTestDto();
@@ -49,22 +72,46 @@ internal class UserTestService(IUserTestRepository userTestRepository) : IUserTe
 		return await userTestRepository.HasUserPassedTestAsync(userId, testId, ct);
 	}
 
-	public async Task<TimeSpan?> GetElapsedAsync(int userId, int testId, CancellationToken ct = default)
+	public async Task<TimeSpan?> GetElapsedAsync(
+		int userId,
+		int testId,
+		CancellationToken ct = default
+	)
 	{
 		return await userTestRepository.GetElapsedTimeAsync(userId, testId, ct);
 	}
 
-	public async Task<ICollection<UserTestDto>> GetListByUserIdAsync(int userId, int page, int pageSize, CancellationToken cancellationToken = default)
+	public async Task<ICollection<UserTestDto>> GetListByUserIdAsync(
+		int userId,
+		int? page,
+		int? pageSize,
+		CancellationToken cancellationToken = default
+	)
 	{
-		var userTestList = await userTestRepository.GetListByUserIdAsync(userId, page, pageSize, cancellationToken);
+		var userTestList = await userTestRepository.GetListByUserIdAsync(
+			userId,
+			page: page ?? PaginationDefaults.DefaultPage,
+			pageSize: pageSize ?? PaginationDefaults.DefaultPageSize,
+			cancellationToken
+		);
 		var userTestDtoList = userTestList.Select(ut => ut.ToUserTestDto()).ToList();
 
 		return userTestDtoList;
 	}
 
-	public async Task<ICollection<UserTestDto>> GetListByTestIdAsync(int testId, int page, int pageSize, CancellationToken cancellationToken = default)
+	public async Task<ICollection<UserTestDto>> GetListByTestIdAsync(
+		int testId,
+		int? page,
+		int? pageSize,
+		CancellationToken cancellationToken = default
+	)
 	{
-		var userTestList = await userTestRepository.GetListByTestIdAsync(testId, page, pageSize, cancellationToken);
+		var userTestList = await userTestRepository.GetListByTestIdAsync(
+			testId,
+			page: page ?? PaginationDefaults.DefaultPage,
+			pageSize: pageSize ?? PaginationDefaults.DefaultPageSize,
+			cancellationToken
+		);
 		var userTestDtoList = userTestList.Select(ut => ut.ToUserTestDto()).ToList();
 
 		return userTestDtoList;
@@ -107,5 +154,4 @@ internal class UserTestService(IUserTestRepository userTestRepository) : IUserTe
 	// 			.ToList()
 	// 	};
 	// }
-
 }

@@ -1,8 +1,11 @@
+using BusinessLogic.Dtos.Practice;
+using BusinessLogic.Dtos.Test;
+using BusinessLogic.Dtos.Theorie;
 using DataAccess;
 
 namespace BusinessLogic.Dtos.Lesson;
 
-public record LessonDto(
+public record RichLessonDto(
     int Id,
     string Title,
     TimeSpan? Duration,
@@ -13,5 +16,8 @@ public record LessonDto(
     DateTime CreatedTime,
     int? CourseId,
     int? PreviousLessonId,
-    int? NextLessonId
+    int? NextLessonId,
+    ICollection<RichTestDto> Tests,
+    ICollection<PracticeDto> Practices,
+    ICollection<TheorieDto> Theories
 );

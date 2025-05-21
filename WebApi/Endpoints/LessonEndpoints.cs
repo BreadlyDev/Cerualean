@@ -17,9 +17,11 @@ public static class LessonEndpoints
         lessonGroup.MapGet("", GetListByPage);
         lessonGroup.MapGet("/{title}", GetByTitle);
         lessonGroup.MapGet("/{id:int}", GetById);
+        lessonGroup.MapGet("/{id:int}/full", GetFullById);
         lessonGroup.MapPut("/{id:int}", UpdateById).RequirePermissions(Permission.Update);
         lessonGroup.MapDelete("/{id:int}", DeleteById).RequirePermissions(Permission.Delete);
         lessonGroup.MapGet("/course/{courseId:int}", GetListByPageAndCourse);
+        lessonGroup.MapGet("/course/{courseId:int}/full", GetListFullByPageAndCourse);
     }
 
     private static async Task<IResult> Create(
@@ -31,11 +33,21 @@ public static class LessonEndpoints
         return Results.Ok();
     }
 
-    private static async Task<IResult> GetById(
-        [FromRoute] int id, ILessonService lessonService
-    )
+    private static async Task<IResult> GetById([FromRoute] int id, ILessonService lessonService)
     {
         var lesson = await lessonService.GetByIdAsync(id);
+
+        if (lesson == null)
+        {
+            return Results.NotFound(lesson);
+        }
+
+        return Results.Ok(lesson);
+    }
+
+    private static async Task<IResult> GetFullById([FromRoute] int id, ILessonService lessonService)
+    {
+        var lesson = await lessonService.GetWithFullInfoByIdAsync(id);
 
         if (lesson == null)
         {
@@ -55,10 +67,7 @@ public static class LessonEndpoints
         return Results.Ok();
     }
 
-    private static async Task<IResult> DeleteById(
-        [FromRoute] int id,
-        ILessonService lessonService
-    )
+    private static async Task<IResult> DeleteById([FromRoute] int id, ILessonService lessonService)
     {
         await lessonService.DeleteByIdAsync(id);
         return Results.Ok();
@@ -89,7 +98,24 @@ public static class LessonEndpoints
         var lessons = await lessonService.GetListByPageAndCourseAsync(
             courseId,
             page ?? PaginationDefaults.DefaultPage,
-            pageSize ?? PaginationDefaults.DefaultPageSize);
+            pageSize ?? PaginationDefaults.DefaultPageSize
+        );
+
+        return Results.Ok(lessons);
+    }
+
+    private static async Task<IResult> GetListFullByPageAndCourse(
+        [FromRoute] int courseId,
+        ILessonService lessonService,
+        [FromQuery] int? page,
+        [FromQuery] int? pageSize
+    )
+    {
+        var lessons = await lessonService.GetListWithFullInfoByPageAndCourseAsync(
+            courseId,
+            page ?? PaginationDefaults.DefaultPage,
+            pageSize ?? PaginationDefaults.DefaultPageSize
+        );
 
         return Results.Ok(lessons);
     }
@@ -102,9 +128,9 @@ public static class LessonEndpoints
     {
         var lessons = await lessonService.GetListByPageAsync(
             page ?? PaginationDefaults.DefaultPage,
-            pageSize ?? PaginationDefaults.DefaultPageSize);
+            pageSize ?? PaginationDefaults.DefaultPageSize
+        );
 
         return Results.Ok(lessons);
     }
 }
-

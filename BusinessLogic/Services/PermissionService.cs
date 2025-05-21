@@ -11,4 +11,3 @@ internal class PermissionService(IUserRepository userRepository) : IPermissionSe
         return await userRepository.GetPermissionsAsync(userId);
     }
 }
-

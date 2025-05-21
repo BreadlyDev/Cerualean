@@ -16,7 +16,7 @@ public static class UserOptionEndpoints
 			.WithOpenApi();
 
 		userOptionGroup.MapPost("", Create);
-		userOptionGroup.MapGet("/question/{userQuestionId:int}/option/{optionId:int}", GetByUserQuestionAndOptionId);
+		userOptionGroup.MapGet("/{userQuestionId:int}/option/{optionId:int}", GetByUserQuestionAndOptionId);
 		userOptionGroup.MapGet("/question/{userQuestionId:int}", GetListByUserQuestionId);
 		userOptionGroup.MapGet("/option/{optionId:int}", GetListByOptionId);
 	}

@@ -1,4 +1,7 @@
 using BusinessLogic.Dtos.Lesson;
+using BusinessLogic.Dtos.Practice;
+using BusinessLogic.Dtos.Test;
+using BusinessLogic.Dtos.Theorie;
 using DataAccess.Entities;
 
 namespace BusinessLogic.Mappers;
@@ -35,20 +38,43 @@ public static class LessonMapper
         };
     }
 
-    public static LessonDto ToLessonDto(this LessonEntity Lesson)
+    public static LessonDto ToLessonDto(this LessonEntity lesson)
     {
         return new LessonDto(
-            Lesson.Id,
-            Lesson.Title,
-            Lesson.Duration,
-            Lesson.Description,
-            Lesson.ImagePath,
-            Lesson.Level,
-            Lesson.UpdatedTime,
-            Lesson.CreatedTime,
-            Lesson.CourseId,
-            Lesson.PreviousLessonId,
-            Lesson.NextLessonId
+            lesson.Id,
+            lesson.Title,
+            lesson.Duration,
+            lesson.Description,
+            lesson.ImagePath,
+            lesson.Level,
+            lesson.UpdatedTime,
+            lesson.CreatedTime,
+            lesson.CourseId,
+            lesson.PreviousLessonId,
+            lesson.NextLessonId
+        );
+    }
+
+    public static RichLessonDto ToRichLessonDto(this LessonEntity lesson,
+        ICollection<RichTestDto> tests,
+        ICollection<PracticeDto> practices,
+        ICollection<TheorieDto> theories)
+    {
+        return new RichLessonDto(
+            lesson.Id,
+            lesson.Title,
+            lesson.Duration,
+            lesson.Description,
+            lesson.ImagePath,
+            lesson.Level,
+            lesson.UpdatedTime,
+            lesson.CreatedTime,
+            lesson.CourseId,
+            lesson.PreviousLessonId,
+            lesson.NextLessonId,
+            tests,
+            practices,
+            theories
         );
     }
 }

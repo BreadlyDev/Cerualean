@@ -3,7 +3,7 @@ namespace BusinessLogic.Dtos.Course;
 public record CourseDto(
    int Id,
    string Title,
-   string? Duration,
+   TimeSpan? Duration,
    string? Description,
    decimal? Price,
    string? ImagePath,

@@ -17,6 +17,7 @@ public static class TestEndpoints
         testGroup.MapGet("", GetListByPage);
         testGroup.MapGet("/{title}", GetByTitle);
         testGroup.MapGet("/{id:int}", GetById);
+        testGroup.MapGet("/{id:int}/questions", GetWithQuestionsById);
         testGroup.MapPut("/{id:int}", UpdateById).RequirePermissions(Permission.Update);
         testGroup.MapDelete("/{id:int}", DeleteById).RequirePermissions(Permission.Delete);
         testGroup.MapGet("/lesson/{lessonId:int}", GetListByPageAndLesson);
@@ -36,6 +37,20 @@ public static class TestEndpoints
     )
     {
         var test = await testService.GetByIdAsync(id);
+
+        if (test == null)
+        {
+            return Results.NotFound(test);
+        }
+
+        return Results.Ok(test);
+    }
+
+    private static async Task<IResult> GetWithQuestionsById(
+        [FromRoute] int id, ITestService testService
+    )
+    {
+        var test = await testService.GetWithQuestionsByIdAsync(id);
 
         if (test == null)
         {
@@ -106,4 +121,3 @@ public static class TestEndpoints
         return Results.Ok(lessons);
     }
 }
-

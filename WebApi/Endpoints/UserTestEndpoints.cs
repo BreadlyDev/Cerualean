@@ -16,12 +16,12 @@ public static class UserTestEndpoints
 			.WithOpenApi();
 
 		userTestGroup.MapPost("", Create);
-		userTestGroup.MapGet("/test/{testId:int}", GetListByTestId);
+		userTestGroup.MapGet("{testId:int}", GetListByTestId);
 		userTestGroup.MapGet("/me", GetListByCurrentUserId);
-		userTestGroup.MapGet("/test/{testId:int}/me", GetByCurrentUserAndTestId);
+		userTestGroup.MapGet("{testId:int}/me", GetByCurrentUserAndTestId);
 
-		userTestGroup.MapPost("/test/{testId:int}/start", StartTest);
-		userTestGroup.MapPost("/test/{testId:int}/complete", CompleteTest);
+		userTestGroup.MapPost("{testId:int}/start", StartTest);
+		userTestGroup.MapPost("{testId:int}/complete", CompleteTest);
 	}
 
 	private static async Task<IResult> Create(

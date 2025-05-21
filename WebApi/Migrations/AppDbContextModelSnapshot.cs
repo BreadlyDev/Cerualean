@@ -86,10 +86,10 @@ namespace WebApi.Migrations
                     b.Property<int>("Level")
                         .HasColumnType("integer");
 
-                    b.Property<int>("NextLessonId")
+                    b.Property<int?>("NextLessonId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("PreviousLessonId")
+                    b.Property<int?>("PreviousLessonId")
                         .HasColumnType("integer");
 
                     b.Property<string>("Title")
@@ -287,33 +287,6 @@ namespace WebApi.Migrations
                     b.HasIndex("PermissionId");
 
                     b.ToTable("RolePermissions");
-
-                    b.HasData(
-                        new
-                        {
-                            RoleId = 1,
-                            PermissionId = 2
-                        },
-                        new
-                        {
-                            RoleId = 1,
-                            PermissionId = 1
-                        },
-                        new
-                        {
-                            RoleId = 1,
-                            PermissionId = 3
-                        },
-                        new
-                        {
-                            RoleId = 1,
-                            PermissionId = 4
-                        },
-                        new
-                        {
-                            RoleId = 2,
-                            PermissionId = 1
-                        });
                 });
 
             modelBuilder.Entity("DataAccess.Entities.TestEntity", b =>
@@ -542,14 +515,12 @@ namespace WebApi.Migrations
                     b.HasOne("DataAccess.Entities.LessonEntity", "NextLesson")
                         .WithOne()
                         .HasForeignKey("DataAccess.Entities.LessonEntity", "NextLessonId")
-                        .OnDelete(DeleteBehavior.SetNull)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.HasOne("DataAccess.Entities.LessonEntity", "PreviousLesson")
                         .WithOne()
                         .HasForeignKey("DataAccess.Entities.LessonEntity", "PreviousLessonId")
-                        .OnDelete(DeleteBehavior.SetNull)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("Course");
 

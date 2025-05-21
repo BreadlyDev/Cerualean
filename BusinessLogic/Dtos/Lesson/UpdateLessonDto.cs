@@ -4,12 +4,12 @@ namespace BusinessLogic.Dtos.Lesson;
 
 public record UpdateLessonDto(
     string Title,
-    string? Duration,
+    TimeSpan? Duration,
     string? Description,
     string? ImagePath,
     Level Level,
     int CourseId,
-    int PreviousLessonId,
-    int NextLessonId
+    int? PreviousLessonId,
+    int? NextLessonId
 );
 

@@ -16,10 +16,10 @@ public static class UserLessonEndpoints
 			.WithOpenApi();
 
 		userLessonGroup.MapPost("", Create);
-		userLessonGroup.MapGet("/lesson/{lessonId:int}", GetByLessonId);
-		userLessonGroup.MapGet("/lesson/{lessonId:int}/access", CanUserAccessLesson);
+		userLessonGroup.MapGet("/{lessonId:int}", GetByLessonId);
+		userLessonGroup.MapGet("/{lessonId:int}/access", CanUserAccessLesson);
 		userLessonGroup.MapGet("", GetListByUserId);
-		userLessonGroup.MapGet("/lesson/{lessonId:int}/details", GetByUserAndLessonId);
+		userLessonGroup.MapGet("/{lessonId:int}/details", GetByUserAndLessonId);
 	}
 
 	private static async Task<IResult> Create(

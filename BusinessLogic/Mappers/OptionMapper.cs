@@ -30,6 +30,15 @@ public static class OptionMapper
         return new OptionDto(
             option.Id,
             option.Text,
+            option.QuestionId
+        );
+    }
+
+    public static CheckOptionDto ToCheckOptionDto(this OptionEntity option)
+    {
+        return new CheckOptionDto(
+            option.Id,
+            option.Text,
             option.IsCorrect,
             option.QuestionId
         );

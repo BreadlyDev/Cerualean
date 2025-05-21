@@ -1,8 +1,9 @@
 namespace BusinessLogic.Dtos.Option;
 
-public record OptionDto(
+public record CheckOptionDto(
     int Id,
     string Text,
+    bool IsCorrect,
     int QuestionId
 );
 

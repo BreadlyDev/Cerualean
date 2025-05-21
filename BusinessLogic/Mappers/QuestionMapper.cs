@@ -1,3 +1,4 @@
+using BusinessLogic.Dtos.Option;
 using BusinessLogic.Dtos.Question;
 using DataAccess.Entities;
 
@@ -32,6 +33,17 @@ public static class QuestionMapper
             question.Text,
             question.ManyRightOptions,
             question.TestId
+        );
+    }
+
+    public static RichQuestionDto ToRichQuestionDto(this QuestionEntity question, ICollection<OptionDto> options)
+    {
+        return new RichQuestionDto(
+            question.Id,
+            question.Text,
+            question.ManyRightOptions,
+            question.TestId,
+            options
         );
     }
 }

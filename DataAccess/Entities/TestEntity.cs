@@ -9,7 +9,7 @@ public class TestEntity
 
 	public int LessonId { get; set; }
 	public LessonEntity? Lesson { get; set; }
-	
+
 	public ICollection<QuestionEntity> Questions { get; set; } = [];
 }
 

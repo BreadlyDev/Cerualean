@@ -98,18 +98,6 @@ namespace WebApi.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.InsertData(
-                table: "RolePermissions",
-                columns: new[] { "PermissionId", "RoleId" },
-                values: new object[,]
-                {
-                    { 1, 1 },
-                    { 2, 1 },
-                    { 3, 1 },
-                    { 4, 1 },
-                    { 1, 2 }
-                });
-
             migrationBuilder.CreateIndex(
                 name: "IX_UserOptions_CorrectOptionId",
                 table: "UserOptions",
@@ -139,44 +127,6 @@ namespace WebApi.Migrations
                 name: "IX_UserTests_TestId",
                 table: "UserTests",
                 column: "TestId");
-        }
-
-        /// <inheritdoc />
-        protected override void Down(MigrationBuilder migrationBuilder)
-        {
-            migrationBuilder.DropTable(
-                name: "UserOptions");
-
-            migrationBuilder.DropTable(
-                name: "UserQuestions");
-
-            migrationBuilder.DropTable(
-                name: "UserTests");
-
-            migrationBuilder.DeleteData(
-                table: "RolePermissions",
-                keyColumns: new[] { "PermissionId", "RoleId" },
-                keyValues: new object[] { 1, 1 });
-
-            migrationBuilder.DeleteData(
-                table: "RolePermissions",
-                keyColumns: new[] { "PermissionId", "RoleId" },
-                keyValues: new object[] { 2, 1 });
-
-            migrationBuilder.DeleteData(
-                table: "RolePermissions",
-                keyColumns: new[] { "PermissionId", "RoleId" },
-                keyValues: new object[] { 3, 1 });
-
-            migrationBuilder.DeleteData(
-                table: "RolePermissions",
-                keyColumns: new[] { "PermissionId", "RoleId" },
-                keyValues: new object[] { 4, 1 });
-
-            migrationBuilder.DeleteData(
-                table: "RolePermissions",
-                keyColumns: new[] { "PermissionId", "RoleId" },
-                keyValues: new object[] { 1, 2 });
         }
     }
 }

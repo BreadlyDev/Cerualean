@@ -11,7 +11,7 @@ public class RolePermissionConfiguration(AuthorizationOptions authorization) : I
     public void Configure(EntityTypeBuilder<RolePermissionEntity> builder)
     {
         builder.HasKey(r => new { r.RoleId, r.PermissionId });
-        builder.HasData(ParseRolePermissions());
+        // builder.HasData(ParseRolePermissions());
     }
 
     private RolePermissionEntity[] ParseRolePermissions()

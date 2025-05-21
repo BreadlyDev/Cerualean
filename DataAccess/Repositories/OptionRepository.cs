@@ -14,40 +14,56 @@ internal class OptionRepository(AppDbContext context) : IOptionRepository
 
     public async Task DeleteByIdAsync(int id, CancellationToken cancellationToken = default)
     {
-        await context.Options.Where(o => o.Id == id).ExecuteDeleteAsync(cancellationToken: cancellationToken);
+        await context
+            .Options.Where(o => o.Id == id)
+            .ExecuteDeleteAsync(cancellationToken: cancellationToken);
     }
 
-    public async Task<OptionEntity?> GetByIdAsync(int id, CancellationToken cancellationToken = default)
+    public async Task<OptionEntity?> GetByIdAsync(
+        int id,
+        CancellationToken cancellationToken = default
+    )
     {
-        return await context.Options.AsNoTracking()
+        return await context
+            .Options.AsNoTracking()
             .FirstOrDefaultAsync(o => o.Id == id, cancellationToken: cancellationToken);
     }
 
-    public async Task<OptionEntity?> GetByTitleAsync(string title, CancellationToken cancellationToken = default)
+    public async Task<OptionEntity?> GetByTitleAsync(
+        string title,
+        CancellationToken cancellationToken = default
+    )
     {
-        return await context.Options.AsNoTracking()
+        return await context
+            .Options.AsNoTracking()
             .FirstOrDefaultAsync(o => o.Text == title, cancellationToken: cancellationToken);
     }
 
-    // public async Task<ICollection<OptionEntity>> GetByPageAndQuestionAsync(int questionId, int page, int pageSize, CancellationToken cancellationToken = default)
-    // {
-    //     return await context.Options.AsNoTracking()
-    //         .Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
-    // }
-
-    public async Task<ICollection<OptionEntity>> GetListByQuestionAsync(int questionId, CancellationToken cancellationToken = default)
+    public async Task<ICollection<OptionEntity>> GetListByQuestionAsync(
+        int questionId,
+        CancellationToken cancellationToken = default
+    )
     {
-        return await context.Options.AsNoTracking()
+        return await context
+            .Options.AsNoTracking()
             .Where(o => o.QuestionId == questionId)
             .ToListAsync(cancellationToken: cancellationToken);
     }
 
-    public async Task UpdateByIdAsync(int id, OptionEntity newOption, CancellationToken cancellationToken = default)
+    public async Task UpdateByIdAsync(
+        int id,
+        OptionEntity newOption,
+        CancellationToken cancellationToken = default
+    )
     {
-        await context.Options.Where(o => o.Id == id)
-            .ExecuteUpdateAsync(o => o.SetProperty(o => o.QuestionId, newOption.QuestionId)
-            .SetProperty(o => o.IsCorrect, newOption.IsCorrect)
-            .SetProperty(o => o.Text, newOption.Text), cancellationToken: cancellationToken);
+        await context
+            .Options.Where(o => o.Id == id)
+            .ExecuteUpdateAsync(
+                o =>
+                    o.SetProperty(o => o.QuestionId, newOption.QuestionId)
+                        .SetProperty(o => o.IsCorrect, newOption.IsCorrect)
+                        .SetProperty(o => o.Text, newOption.Text),
+                cancellationToken: cancellationToken
+            );
     }
 }
-

@@ -1,3 +1,4 @@
+using BusinessLogic.Dtos.Question;
 using BusinessLogic.Dtos.Test;
 using DataAccess.Entities;
 
@@ -35,6 +36,18 @@ public static class TestMapper
             test.Duration,
             test.Level,
             test.LessonId
+        );
+    }
+
+    public static RichTestDto ToRichTestDto(this TestEntity test, ICollection<RichQuestionDto> questions)
+    {
+        return new RichTestDto(
+            test.Id,
+            test.Title,
+            test.Duration,
+            test.Level,
+            test.LessonId,
+            questions
         );
     }
 }

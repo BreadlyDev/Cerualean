@@ -26,7 +26,6 @@ public static class DataAccessExtensions
 		services.AddScoped<IUserLessonRepository, UserLessonRepository>();
 
 
-
 		services.AddDbContext<AppDbContext>(x =>
 		{
 			var connectionString = configuration.GetConnectionString("DefaultConnectionString");

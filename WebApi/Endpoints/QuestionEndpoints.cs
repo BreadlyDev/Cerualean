@@ -15,9 +15,11 @@ public static class QuestionEndpoints
 		questionGroup.MapPost("", Create).RequirePermissions(Permission.Create);
 		questionGroup.MapGet("/{title}", GetByTitle);
 		questionGroup.MapGet("/{id:int}", GetById);
+		questionGroup.MapGet("/{id:int}/options", GetWithOptionsById);
 		questionGroup.MapPut("/{id:int}", UpdateById).RequirePermissions(Permission.Update);
 		questionGroup.MapDelete("/{id:int}", DeleteById).RequirePermissions(Permission.Delete);
 		questionGroup.MapGet("/test/{testId:int}", GetListByTest);
+		questionGroup.MapGet("/test/{testId:int}/options", GetListWithOptionsByTest);
 	}
 
 	private static async Task<IResult> Create(
@@ -34,6 +36,20 @@ public static class QuestionEndpoints
 	)
 	{
 		var question = await questionService.GetByIdAsync(id);
+
+		if (question == null)
+		{
+			return Results.NotFound(question);
+		}
+
+		return Results.Ok(question);
+	}
+
+	private static async Task<IResult> GetWithOptionsById(
+		[FromRoute] int id, IQuestionService questionService
+	)
+	{
+		var question = await questionService.GetWithOptionsByIdAsync(id);
 
 		if (question == null)
 		{
@@ -82,6 +98,15 @@ public static class QuestionEndpoints
 	)
 	{
 		var questions = await questionService.GetListByTestAsync(testId);
+		return Results.Ok(questions);
+	}
+
+	private static async Task<IResult> GetListWithOptionsByTest(
+		[FromRoute] int testId,
+		IQuestionService questionService
+	)
+	{
+		var questions = await questionService.GetListWithOptionsByTestAsync(testId);
 		return Results.Ok(questions);
 	}
 }
