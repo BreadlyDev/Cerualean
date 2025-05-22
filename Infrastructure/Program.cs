@@ -1,1 +1,0 @@
-System.Console.WriteLine("Infrastructure Layer");
