@@ -5,6 +5,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+.vscode/
 
 # Build results
 bin/
@@ -18,7 +19,22 @@ obj/
 /WebApi/bin
 /WebApi/obj
 
-.vscode/
+# Configurations
+/WebApi/appsettings.Development.json
+/WebApi/appsettings.json
+/WebApi/Properties
+/DataAccess/appsettings.Development.json
+/DataAccess/appsettings.json
+/DataAccess/Properties
+/BusinessLogic/appsettings.Development.json
+/BusinessLogic/appsettings.json
+/BusinessLogic/Properties
+/Infrastructure/appsettings.Development.json
+/Infrastructure/appsettings.json
+/Infrastructure/Properties
+
+# Migrations
+/WebApi/Migrations
 
 # Rider / JetBrains
 .idea/
